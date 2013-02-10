@@ -1,0 +1,9 @@
+[C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
+
+AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\force.angelscript line 84): 
+No matching signatures to 'getPlayerXYAxis(const uint)'
+
+AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\force.angelscript line 84): 
+Can't implicitly convert from 'const int' to 'vector2'.
+ERROR - Failed while building module.
+ERROR - ETHEngine::StartEngine: the script has set no scene to load.
