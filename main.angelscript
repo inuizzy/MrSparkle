@@ -3,6 +3,8 @@
 */
 
 Timer g_timer;
+string VelStr;
+vector2 VelVec;
 
 #include "eth_util.angelscript"
 #include "Collide.angelscript"
@@ -16,13 +18,14 @@ void main()
 	// SetWindowProperties("Ethanon Engine", 1024, 768, true, true, PF32BIT);
 }
 
+
 void onUpdate()
 {
 	ETHEntity@ thisEntity = SeekEntity("spark.ent");
 	vector2 currentPos = thisEntity.GetPositionXY();
 	bool touchingGround = (thisEntity.GetUInt("touchingGround") != 0);
 
-	DrawFadingText(vector2(100,0),"Test: " + vector2ToString(getCurrentForce(thisEntity)) + "\n " + vector2ToString(currentPos) + "\n" + touchingGround + "\n" + GetTime(),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+	DrawFadingText(vector2(100,0),"Test: " + vector2ToString(getCurrentForce(thisEntity)) + "\n " + vector2ToString(currentPos) + "\n" + touchingGround + "\n" + GetTime() + "\n" + thisEntity.GetInt("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
 }
 
@@ -41,6 +44,8 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	float sparkY;
 	string strDirX;
 	string strDirY;
+	
+	thisEntity.SetFloat("maxJumps",3);
 	collisionBox thisBox = thisEntity.GetCollisionBox();
 	thisBox.pos += (thisEntity.GetPosition() - vector3(0,20,0));
 	//thisBox.pos += thisEntity.GetPosition();
@@ -60,6 +65,8 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 
 	if (moveDirection.x == 0)
 		strDirX = "N/A";
+
+/* remove only this to uncomment!
 
 	if (moveDirection.y < 0)
 		{
@@ -92,7 +99,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 		}
 
 		
-	if (input.GetKeyState(K_UP) == KS_DOWN)
+	if (input.GetKeyState(K_UP) == KS_HIT)
 		{
 
 			//DrawFadingText(vector2(100,200),"test01","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
@@ -101,23 +108,95 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			
 			//body.ApplyLinearImpulse(vector2(0.0f, sparkY), vector2(thisEntity.GetPosition().x, thisEntity.GetPosition().y));
 			//thisEntity.SetUInt("touchingGround", 1);
-			DrawFadingText(vector2(100,200),"test02","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+			
+			//DrawFadingText(vector2(100,200),"g_timer: " + g_timer.getElapsedTime(),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+			//}
+			//if (g_timer.getElapsedTime() <= 100)
+			//{
+
+				//}
+				if (thisEntity.GetFloat("jumps") < thisEntity.GetFloat("maxJumps"))
+				{
+					g_timer.start();
+					DrawFadingText(vector2(100,200),"start timer","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+					thisEntity.SetFloat("jumps", (thisEntity.GetFloat("jumps") + 1));
+				}
+
+			//}
+			
 				
-			float time1 = GetTime();
-			float time2;
 			
-			
-			thisEntity.SetFloat("forceY", -1);
-			body.ApplyLinearImpulse(normalize(vector2(0.0f, sparkY)), vector2(thisEntity.GetPosition().x, thisEntity.GetPosition().y));
+		
+
+
+			//body.ApplyLinearImpulse(normalize(vector2(0.0f, sparkY)), vector2(thisEntity.GetPosition().x, thisEntity.GetPosition().y));
 		
 			
 
+			}
+
+		if (input.GetKeyState(K_UP) == KS_DOWN)
+			{
+
+
+				/*string VelStr;
+				vector2 VelVec;
+
+				VelVec = body.GetLinearVelocity();
+				VelStr = vector2ToString(VelVec);
+
+				DrawFadingText(vector2(100,200),VelStr,"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);*/
+			
+			
+
+					if (g_timer.getElapsedTime() < 400)
+					{
+
+						//Velocity
+						//body.ApplyLinearImpulse(normalize(vector2(0.0f, sparkY)), vector2(thisEntity.GetPosition().x, thisEntity.GetPosition().y));
+						body.SetLinearVelocity(normalize(vector2(0.0f, sparkY)));
+						thisEntity.SetFloat("forceY", -1);
+					}
+
+					else 
+					{
+						thisEntity.SetFloat("forceY", 0);
+					}
+			
+
 		}
-		if (input.GetKeyState(K_UP) == KS_UP)
+
+	if (input.GetKeyState(K_UP) == KS_UP)
 		{
 			//DrawFadingText(vector2(100,200),"up","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 			thisEntity.SetFloat("forceY", 0);
 		}
+		
+	if (input.GetKeyState(K_S) == KS_DOWN)
+	{
+				
+
+				VelVec = body.GetLinearVelocity();
+				VelStr = vector2ToString(VelVec);
+
+				DrawFadingText(vector2(100,200),VelStr + " " + thisEntity.GetFloat("jumps") + " " + thisEntity.GetInt("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+
+	}
+
+	//if (thisEntity.CheckCustomData("elapsedTime") == DT_NODATA)
+		//{
+			//thisEntity.SetUInt("elapsedTime", 0);
+
+			//thisEntity.AddToUInt("elapsedTime", GetLastFrameElapsedTime());
+		//}
+
+	// do a certain operation each 300 millisecs
+	//if (thisEntity.GetUInt("elapsedTime") > 300)
+		//{
+
+			//DrawFadingText(vector2(400,400),"Elaspe","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+			//thisEntity.SetUInt("elapsedTime", 0);
+		//}
 
 
 
@@ -160,6 +239,19 @@ if (other.GetEntityName() == "spark.ent")
 		print("Mr Sparkle hit block!");
 		DrawFadingText(vector2(200,300),"Collide!","Verdana30_shadow.fnt",ARGB(120,25,46,255), 500);
 		other.SetUInt("touchingGround", 1);
+		other.SetFloat("jumps",0);
+		int HP = thisEntity.GetInt("HP"); 
+
+		if (VelVec.y > 20)
+		{
+			HP = (HP -10);
+			
+			DrawFadingText(vector2(400,400),"10 DAMAGE","Verdana30_shadow.fnt",ARGB(120,25,46,255), 500);
+
+		}
+
+		thisEntity.SetInt("HP",HP);
+
 	}
 
 }

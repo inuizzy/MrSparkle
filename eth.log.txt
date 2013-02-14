@@ -1,120 +1,12 @@
 [C:\Users\Falcon\Documents\Ethanon\MrSparkle\eth.log.txt]
 Backbuffer created as 854, 480
 Loading game script from source-code: main.angelscript
-Compile time: 16 milliseconds
+Compile time: 15 milliseconds
 (Loaded) block.png
 (Loaded) front.png
 Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
 Mr Sparkle hit block!
@@ -122,22 +14,8 @@ Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
 Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
@@ -146,5 +24,3 @@ Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
 Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
