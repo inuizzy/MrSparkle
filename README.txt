@@ -1,0 +1,1 @@
+Hello and Welcome to MrSparkle test game for Project THB. If you would like to edit the game on your computer go to http://ethanonengine.com/downloads/ and download the engine. I recommend using Sublime Text with the ethanon plugin for code editting. If you are using the GitHub client then please do not commit any changes to the main project or I'll make it private. 

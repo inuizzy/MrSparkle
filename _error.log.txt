@@ -1,12 +1,6 @@
 [C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
 
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 23): 
-Expected one of: get, set, }
-
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 25): 
-Expected identifier
-
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 29): 
-Unexpected token '}'
+AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 260): 
+Expected ';'
 ERROR - Failed while building module.
 ERROR - ETHEngine::StartEngine: the script has set no scene to load.

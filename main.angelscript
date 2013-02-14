@@ -5,6 +5,7 @@
 Timer g_timer;
 string VelStr;
 vector2 VelVec;
+float HP;
 
 #include "eth_util.angelscript"
 #include "Collide.angelscript"
@@ -19,13 +20,21 @@ void main()
 }
 
 
+void onCreate()
+{
+	ETHEntity@ thisEntity = SeekEntity("spark.ent");
+	HP = thisEntity.GetFloat("HP");
+
+}
+
+
 void onUpdate()
 {
 	ETHEntity@ thisEntity = SeekEntity("spark.ent");
 	vector2 currentPos = thisEntity.GetPositionXY();
 	bool touchingGround = (thisEntity.GetUInt("touchingGround") != 0);
 
-	DrawFadingText(vector2(100,0),"Test: " + vector2ToString(getCurrentForce(thisEntity)) + "\n " + vector2ToString(currentPos) + "\n" + touchingGround + "\n" + GetTime() + "\n" + thisEntity.GetInt("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+	DrawFadingText(vector2(100,0),"Test: " + vector2ToString(getCurrentForce(thisEntity)) + "\n " + vector2ToString(currentPos) + "\n" + touchingGround + "\n" + GetTime() + "\n" + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
 }
 
@@ -44,8 +53,9 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	float sparkY;
 	string strDirX;
 	string strDirY;
+
 	
-	thisEntity.SetFloat("maxJumps",3);
+	thisEntity.SetFloat("maxJumps",2);
 	collisionBox thisBox = thisEntity.GetCollisionBox();
 	thisBox.pos += (thisEntity.GetPosition() - vector3(0,20,0));
 	//thisBox.pos += thisEntity.GetPosition();
@@ -93,6 +103,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 
 	if (input.GetKeyState(K_SPACE) == KS_DOWN)
 		{
+			thisEntity.SetFloat("HP",100);
 			DrawFadingText(vector2(200,200),"spark X and Y " + sparkX + " " + sparkY + "\n " + strDirX + " " + strDirY,"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 			//thisEntity.SetUInt("touchingGround", 1);
 			//body.ApplyLinearImpulse(vector2(0.0f, sparkY), vector2(thisEntity.GetPosition().x, thisEntity.GetPosition().y));
@@ -149,7 +160,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			
 			
 
-					if (g_timer.getElapsedTime() < 400)
+					if (g_timer.getElapsedTime() < 250)
 					{
 
 						//Velocity
@@ -173,15 +184,14 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 		}
 		
 	if (input.GetKeyState(K_S) == KS_DOWN)
-	{
+		{
 				
 
-				VelVec = body.GetLinearVelocity();
-				VelStr = vector2ToString(VelVec);
+			VelVec = body.GetLinearVelocity();
+			VelStr = vector2ToString(VelVec);
+			DrawFadingText(vector2(100,200),VelStr + " " + thisEntity.GetFloat("jumps") + " " + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
-				DrawFadingText(vector2(100,200),VelStr + " " + thisEntity.GetFloat("jumps") + " " + thisEntity.GetInt("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
-
-	}
+		}
 
 	//if (thisEntity.CheckCustomData("elapsedTime") == DT_NODATA)
 		//{
@@ -240,17 +250,17 @@ if (other.GetEntityName() == "spark.ent")
 		DrawFadingText(vector2(200,300),"Collide!","Verdana30_shadow.fnt",ARGB(120,25,46,255), 500);
 		other.SetUInt("touchingGround", 1);
 		other.SetFloat("jumps",0);
-		int HP = thisEntity.GetInt("HP"); 
+
 
 		if (VelVec.y > 20)
 		{
-			HP = (HP -10);
 			
+			HP =- 90;
 			DrawFadingText(vector2(400,400),"10 DAMAGE","Verdana30_shadow.fnt",ARGB(120,25,46,255), 500);
 
 		}
 
-		thisEntity.SetInt("HP",HP);
+		
 
 	}
 
