@@ -1,15 +1,150 @@
 [C:\Users\Falcon\Documents\Ethanon\MrSparkle\eth.log.txt]
 Backbuffer created as 854, 480
 Loading game script from source-code: main.angelscript
-
-AngelScript INFO (C:\Users\Falcon\Documents\Ethanon\MrSparkle\force.angelscript line 82): 
-Compiling uint getInputDirection(const uint)
-
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\force.angelscript line 84): 
-No matching signatures to 'getPlayerXYAxis(const uint)'
-
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\force.angelscript line 84): 
-Can't implicitly convert from 'const int' to 'vector2'.
-Compile time: 47 milliseconds
-ERROR - Failed while building module.
-ERROR - ETHEngine::StartEngine: the script has set no scene to load.
+Compile time: 16 milliseconds
+(Loaded) block.png
+(Loaded) front.png
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!

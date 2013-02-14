@@ -233,3 +233,87 @@ class frameTimer
 	private uint m_currentLast;
 	private uint m_currentFrame;
 }
+
+void shadowText(const vector2 pos, const string text, const string font, const float size,
+				const uint8 a, const uint8 r, const uint8 g, const uint8 b)
+{
+	DrawText(pos+vector2(size*0.1f, size*0.1f), text, font, size, ARGB(a/2,0,0,0));
+	DrawText(pos, text, font, size, ARGB(a,r,g,b));
+}
+
+string getTimeString(const uint time)
+{
+	const uint secs = (time/1000)%60;
+	string seconds;
+	if (secs < 10)
+		seconds = "0"+secs;
+	else
+		seconds = ""+secs;
+	return "" + (time/1000)/60 + ":" + seconds;
+}
+
+class Timer
+{
+	Timer()
+	{
+		startTime = 0;
+	}
+	
+	void start()
+	{
+		startTime = GetTime();
+	}
+	
+	uint getElapsedTime()
+	{
+		return GetTime()-startTime;
+	}
+	
+	void showTimer(const vector2 pos, const float size, const uint8 a,
+				   const uint8 r, const uint8 g, const uint8 b)
+	{
+		const uint elapsed = getElapsedTime();
+		string time = getTimeString(elapsed);
+		shadowText(pos, time, "Verdana30_shadow.fnt", size, a, r, g, b);
+	}
+	
+	private uint startTime;
+}
+/*
+class Timer2 : GameController
+{
+	private uint m_time;
+	private bool m_pausable;
+
+	Timer()
+	{
+		m_pausable = true;
+		reset();
+	}
+
+	Timer(bool pausable)
+	{
+		m_pausable = pausable;
+		reset();
+	}
+
+	void update()
+	{
+		if (m_pausable)
+			m_time += g_timeManager.getLastFrameElapsedTime();
+		else
+			m_time += GetLastFrameElapsedTime();
+	}
+
+	void reset()
+	{
+		m_time = 0;
+	}
+
+	void draw() {}
+
+	uint getTime() const
+	{
+		return m_time;
+	}
+}*/
