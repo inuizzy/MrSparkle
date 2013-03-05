@@ -1,6 +1,9 @@
-[C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
+[G:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
 
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 260): 
-Expected ';'
+AngelScript ERROR (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 160): 
+Expression is not an l-value
+
+AngelScript ERROR (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 160): 
+Expression must be of boolean type
 ERROR - Failed while building module.
 ERROR - ETHEngine::StartEngine: the script has set no scene to load.

@@ -3,6 +3,8 @@
 */
 
 Timer g_timer;
+Timer s_timer;
+Timer d_timer;
 string VelStr;
 vector2 VelVec;
 float HP;
@@ -23,7 +25,13 @@ void main()
 void onCreate()
 {
 	ETHEntity@ thisEntity = SeekEntity("spark.ent");
+	thisEntity.SetFloat("HP",100);
 	HP = thisEntity.GetFloat("HP");
+	uint bgblue = ARGB(225,155,230,244);
+	SetBackgroundColor(bgblue);
+	s_timer.start();
+	
+	 
 
 }
 
@@ -31,10 +39,45 @@ void onCreate()
 void onUpdate()
 {
 	ETHEntity@ thisEntity = SeekEntity("spark.ent");
+	ETHPhysicsController @body = thisEntity.GetPhysicsController();
 	vector2 currentPos = thisEntity.GetPositionXY();
 	bool touchingGround = (thisEntity.GetUInt("touchingGround") != 0);
+	//thisEntity.SetFloat("HP",HP);
+	VelVec = body.GetLinearVelocity();
+	VelStr = vector2ToString(VelVec);
 
 	DrawFadingText(vector2(100,0),"Test: " + vector2ToString(getCurrentForce(thisEntity)) + "\n " + vector2ToString(currentPos) + "\n" + touchingGround + "\n" + GetTime() + "\n" + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+
+}
+
+void ETHCallback_flyEnm(ETHEntity@ thisEntity)
+{
+	ETHPhysicsController @body = thisEntity.GetPhysicsController();
+	
+
+	if (s_timer.getElapsedTime() < 2500)
+		{
+
+			body.SetLinearVelocity(normalize(vector2(-0.9f, -0.5f)));
+			//print("plus" + getTimeString(s_timer.getElapsedTime()));
+			
+		}
+
+	if (s_timer.getElapsedTime() >= 2500 && s_timer.getElapsedTime() <= 4500)
+		{
+
+			body.SetLinearVelocity(normalize(vector2(0.9f, 0.5f)));
+			//print("minus" + getTimeString(s_timer.getElapsedTime()));
+			
+		}
+	if (s_timer.getElapsedTime() > 5000)
+		{
+
+			s_timer.reset();
+			//print("reset" + getTimeString(s_timer.getElapsedTime()));
+
+		}
+
 
 }
 
@@ -49,6 +92,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	moveDirection = KeyboardInput();
 	vector2 currentPos = thisEntity.GetPositionXY();
 	float speed = UnitsPerSecond(500.0f);
+	float dash = UnitsPerSecond(1000.0f);
 	float sparkX;
 	float sparkY;
 	string strDirX;
@@ -100,6 +144,31 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			thisEntity.SetUInt("elapsedTime", 0);
 			//thisEntity.AddToUInt("elapsedTime", GetLastFrameElapsedTime());
 		}
+
+	if (thisEntity.CheckCustomData("invin") == DT_NODATA)
+		{
+			thisEntity.SetUInt("invin", 0);
+		}
+
+	/*if (thisEntity.GetInt("invin") > 0)
+		{
+			print("Start Damage Timer");
+			d_timer.start();
+		}*/
+	if (d_timer.getElapsedTime() >= 2000)
+		{
+			if (d_timer.isRunning() < 1)
+			{
+				//bad programming this will run on forever/until collision
+			}
+			else
+			{
+				print("Reset Damage Timer");
+				d_timer.stop();
+				thisEntity.SetInt("invin",0);
+			}
+		}
+
 
 	if (input.GetKeyState(K_SPACE) == KS_DOWN)
 		{
@@ -182,13 +251,19 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			//DrawFadingText(vector2(100,200),"up","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 			thisEntity.SetFloat("forceY", 0);
 		}
+
+	if (input.GetKeyState(K_D) == KS_HIT)
+		{
+			addHP(thisEntity,-10);
+			thisEntity.SetFloat("jumps",0);
+		}
 		
 	if (input.GetKeyState(K_S) == KS_DOWN)
 		{
 				
 
-			VelVec = body.GetLinearVelocity();
-			VelStr = vector2ToString(VelVec);
+			//VelVec = body.GetLinearVelocity();
+			//VelStr = vector2ToString(VelVec);
 			DrawFadingText(vector2(100,200),VelStr + " " + thisEntity.GetFloat("jumps") + " " + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
 		}
@@ -235,6 +310,9 @@ vector2 KeyboardInput()
 	return keydir;
 }
 
+
+/////Block collision/////
+
 void ETHBeginContactCallback_mblock(
 ETHEntity@ thisEntity,
 ETHEntity@ other,
@@ -252,11 +330,12 @@ if (other.GetEntityName() == "spark.ent")
 		other.SetFloat("jumps",0);
 
 
-		if (VelVec.y > 20)
+		if (VelVec.y >= 20)
 		{
 			
-			HP =- 90;
-			DrawFadingText(vector2(400,400),"10 DAMAGE","Verdana30_shadow.fnt",ARGB(120,25,46,255), 500);
+			//other.SetFloat("HP",(other.GetFloat("HP") - 10));
+			addHP(other,-10);
+			DrawFadingText(vector2(400,400),"10 DAMAGE","Verdana30_shadow.fnt",ARGB(120,25,255,255), 1000);
 
 		}
 
@@ -266,6 +345,7 @@ if (other.GetEntityName() == "spark.ent")
 
 }
 
+
 void ETHEndContactCallback_mblock(
 	ETHEntity@ thisEntity,
 	ETHEntity@ other,
@@ -274,6 +354,61 @@ void ETHEndContactCallback_mblock(
 	vector2 contactNormal)
 {
 	if (other.GetEntityName() == "spark.ent")
+	{
 		print("Our character is no longer stepping on the ground!");
 		other.SetUInt("touchingGround", 0);
+
+	}
+}
+
+/////End block collision/////
+
+/////Fly collision/////
+
+void ETHBeginContactCallback_flyEnm(
+ETHEntity@ thisEntity,
+ETHEntity@ other,
+vector2 contactPointA,
+vector2 contactPointB,
+vector2 contactNormal)
+
+{
+
+if (other.GetEntityName() == "spark.ent")
+	{
+		if (other.GetInt("invin") < 1)
+		{
+			addHP(other,-5);
+			print("Monster Damage");
+			other.SetInt("invin",1);
+			d_timer.start();
+			print("Start Damage Timer");
+			/*if (d_timer.getElapsedTime() <= 0)
+			{
+				print("Monster Damage");
+				d_timer.start();
+				addHP(other,-5);
+			}
+
+			if (d_timer.getElapsedTime() >= 2000)
+			{
+				print("Monster Reset");
+				d_timer.reset();
+			}*/
+		}
+	}
+
+}
+/////End fly collision/////
+
+
+
+void addHP(ETHEntity @thisEntity, const int value)
+{
+	int toAdd = thisEntity.GetFloat("HP");
+
+	toAdd = (value+toAdd);
+
+	thisEntity.SetFloat("HP",toAdd);
+
 }

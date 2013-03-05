@@ -1,77 +1,94 @@
 [C:\Users\Falcon\Documents\Ethanon\MrSparkle\eth.log.txt]
 Backbuffer created as 854, 480
 Loading game script from source-code: main.angelscript
-Compile time: 0 milliseconds
+Compile time: 15 milliseconds
 (Loaded) block.png
 (Loaded) front.png
 (Loaded) testSize.png
+(Loaded) fly_normal.png
 Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
+Monster Damage
+Start Damage Timer
+Reset Damage Timer
 Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
+Monster Damage
+Start Damage Timer
 Mr Sparkle hit block!
 Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
+Reset Damage Timer
 Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
+Monster Damage
+Start Damage Timer
 Mr Sparkle hit block!
 Mr Sparkle hit block!
+Reset Damage Timer
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
+Monster Damage
+Start Damage Timer
 Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Mr Sparkle hit block!
+Reset Damage Timer

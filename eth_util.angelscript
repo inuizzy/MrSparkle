@@ -268,6 +268,22 @@ class Timer
 	{
 		return GetTime()-startTime;
 	}
+
+	uint isRunning()
+	{
+		return startTime;
+	}
+
+	void reset()
+	{
+		startTime = GetTime();
+	}
+
+	void stop()
+	{
+		startTime = 0;
+	}
+
 	
 	void showTimer(const vector2 pos, const float size, const uint8 a,
 				   const uint8 r, const uint8 g, const uint8 b)
