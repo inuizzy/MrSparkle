@@ -8,87 +8,168 @@ Compile time: 15 milliseconds
 (Loaded) fly_normal.png
 Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Monster Damage
-Start Damage Timer
-Reset Damage Timer
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Mr Sparkle hit block!
-Our character is no longer stepping on the ground!
-Monster Damage
-Start Damage Timer
+(Loaded) particle.png
 Mr Sparkle hit block!
 Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
+hit
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+ENDhit
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+hit
+hit
+ENDhit
+ENDhit
+hit
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+ENDhit
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+hit
+ENDhit
+hit
+ENDhit
+Monster Damage
+Start Damage Timer
 Reset Damage Timer
+(Loaded) GON.png
+(Loaded) block.png
+(Loaded) front.png
+(Loaded) testSize.png
+(Loaded) fly_normal.png
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Monster Damage
+Start Damage Timer
+(Loaded) particle.png
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+hit
+ENDhit
+hit
+hit
+ENDhit
+ENDhit
+Reset Damage Timer
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+hit
+ENDhit
+Our character is no longer stepping on the ground!
+hit
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+ENDhit
+hit
+Monster Damage
+Start Damage Timer
+ENDhit
+hit
+Mr Sparkle hit block!
+ENDhit
+hit
+ENDhit
+Mr Sparkle hit block!
+hit
+ENDhit
+Reset Damage Timer
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Monster Damage
+Start Damage Timer
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+hit
+ENDhit
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+hit
+ENDhit
+Reset Damage Timer
+hit
+ENDhit
+hit
+ENDhit
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Monster Damage
 Start Damage Timer
 Mr Sparkle hit block!
 Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
 Reset Damage Timer
+hit
+ENDhit
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+hit
+ENDhit
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
 Monster Damage
 Start Damage Timer
-Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
 Our character is no longer stepping on the ground!
 Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
 Reset Damage Timer
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+hit
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+ENDhit
+hit
+ENDhit
+Mr Sparkle hit block!
+Mr Sparkle hit block!

@@ -78,6 +78,25 @@ void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 
 		}
 
+		if (thisEntity.GetFloat("dead") == 1)
+		{
+			DeleteEntity(thisEntity);
+		}
+
+
+
+}
+
+void ETHCallback_bullet(ETHEntity@ thisEntity)
+{
+	//ETHPhysicsController @body = thisEntity.GetPhysicsController();
+	float speed = UnitsPerSecond(500.0f);
+
+	thisEntity.AddToPositionXY(normalize(vector2(1,0)) * speed);
+	if (thisEntity.GetFloat("dead") == 1)
+		{
+			DeleteEntity(thisEntity);
+		}
 
 }
 
@@ -97,6 +116,9 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	float sparkY;
 	string strDirX;
 	string strDirY;
+
+	ETHEntity @bullet = SeekEntity("bullet.ent");
+	
 
 	
 	thisEntity.SetFloat("maxJumps",2);
@@ -267,6 +289,14 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			DrawFadingText(vector2(100,200),VelStr + " " + thisEntity.GetFloat("jumps") + " " + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
 		}
+	if (input.GetKeyState(K_F) == KS_HIT)
+		{
+			AddEntity("bullet.ent", vector3(thisEntity.GetPosition() + vector3(50,0,0)));
+			//bullet.AddToPositionXY(normalize(vector2(1,0)) * speed);
+			//ETHEntity @bullet = SeekEntity("bullet.ent");
+			//ETHPhysicsController @bullbody = bullet.GetPhysicsController();
+			//bullbody.SetLinearVelocity(normalize(vector2(1.0f, 0.0f)));
+		}
 
 	//if (thisEntity.CheckCustomData("elapsedTime") == DT_NODATA)
 		//{
@@ -282,13 +312,18 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			//DrawFadingText(vector2(400,400),"Elaspe","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 			//thisEntity.SetUInt("elapsedTime", 0);
 		//}
-
+	if (thisEntity.GetFloat("HP") <= 0)
+		{
+			LoadScene("scenes/gameover.esc", "onGOCreate", "onGOUpdate");
+		}
 
 
 	sparkX = thisEntity.GetFloat("forceX");
 	sparkY = thisEntity.GetFloat("forceY");
 	thisEntity.AddToPositionXY(normalize(vector2(sparkX,sparkY)) * speed);
 }
+
+
 
 vector2 KeyboardInput()
 {
@@ -309,6 +344,23 @@ vector2 KeyboardInput()
 
 	return keydir;
 }
+
+/////GAMEOVER/////
+
+void ETHCallback_gameover(ETHEntity@ thisEntity)
+{
+	ETHInput @input = GetInputHandle();
+	if (input.KeyDown(K_ENTER))
+	{
+		Exit();
+	}
+	if (input.KeyDown(K_R))
+	{
+		LoadScene("scenes/scene01.esc", "onCreate", "onUpdate");
+	}
+}
+
+/////END GAMEOVER/////
 
 
 /////Block collision/////
@@ -400,6 +452,38 @@ if (other.GetEntityName() == "spark.ent")
 
 }
 /////End fly collision/////
+
+/////BULLET BITCHES/////
+void ETHBeginContactCallback_bullet(
+ETHEntity@ thisEntity,
+ETHEntity@ other,
+vector2 contactPointA,
+vector2 contactPointB,
+vector2 contactNormal)
+
+{
+	if (other.GetEntityName() == "flyEnm.ent")
+	{
+		print("hit");
+		//other.SetFloat("dead",1);
+	}
+
+}
+
+void ETHEndContactCallback_bullet(
+ETHEntity@ thisEntity,
+ETHEntity@ other,
+vector2 contactPointA,
+vector2 contactPointB,
+vector2 contactNormal)
+
+{
+	if (other.GetEntityName() == "flyEnm.ent")
+	{
+		print("ENDhit");
+		other.SetFloat("dead",1);
+	}
+}
 
 
 
