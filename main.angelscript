@@ -53,6 +53,7 @@ void onUpdate()
 void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 {
 	ETHPhysicsController @body = thisEntity.GetPhysicsController();
+	ETHEntity@ spark = SeekEntity("spark.ent");
 	
 
 	if (s_timer.getElapsedTime() < 2500)
@@ -81,6 +82,7 @@ void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 		if (thisEntity.GetFloat("dead") == 1)
 		{
 			DeleteEntity(thisEntity);
+			addHP(spark,10);
 		}
 
 
@@ -104,6 +106,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 {
 	ETHInput @input = GetInputHandle();
 	ETHPhysicsController @body = thisEntity.GetPhysicsController();
+	ETHEntity@ bullet = SeekEntity("bullet.ent");
 
 	SetCameraPos(thisEntity.GetPositionXY() - (GetScreenSize() / 2.0f));
 	const float textSize = 25.0f;
@@ -116,9 +119,6 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	float sparkY;
 	string strDirX;
 	string strDirY;
-
-	ETHEntity @bullet = SeekEntity("bullet.ent");
-	
 
 	
 	thisEntity.SetFloat("maxJumps",2);
@@ -336,11 +336,11 @@ vector2 KeyboardInput()
 	if (input.KeyDown(K_RIGHT))
 		keydir.x += 1;
 
-	//if (input.KeyDown(K_UP))
-		//keydir.y +=-1;
+	if (input.KeyDown(K_UP))
+		keydir.y +=-1;
 		
-	//if (input.KeyDown(K_DOWN))
-		//keydir.y += 1;
+	if (input.KeyDown(K_DOWN))
+		keydir.y += 1;
 
 	return keydir;
 }
@@ -448,6 +448,10 @@ if (other.GetEntityName() == "spark.ent")
 				d_timer.reset();
 			}*/
 		}
+		else
+		{
+			print("CAN'T TOUCH THIS");
+		}
 	}
 
 }
@@ -485,7 +489,7 @@ vector2 contactNormal)
 	}
 }
 
-
+/////END BULLET BITCHES/////
 
 void addHP(ETHEntity @thisEntity, const int value)
 {

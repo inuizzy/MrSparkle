@@ -1,4 +1,4 @@
 [G:\Users\Falcon\Documents\Ethanon\MrSparkle\_warning.log.txt]
 
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 37): 
-'sparkY' is not initialized.
+AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\eth_util.angelscript line 349): 
+'dir' is not initialized.

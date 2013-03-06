@@ -333,3 +333,59 @@ class Timer2 : GameController
 		return m_time;
 	}
 }*/
+const uint DR = 0;
+const uint R = 1;
+const uint UR = 2;
+const uint U = 3;
+const uint UL = 4;
+const uint L = 5;
+const uint DL = 6;
+const uint D = 7;
+
+uint find8way(const vector2 v)
+{
+	const float angle = getAngle(v);
+	const float angleInDegrees = radianToDegree(angle);
+
+	uint dir;
+	///// Example, x = low degree, y = high degree
+	///// xy = direction
+	/*if (angleInDegrees >= x && angleInDegrees < y)
+	{
+		dir = xy;
+	}*/
+	if (angleInDegrees >= 22.5 && angleInDegrees < 67.5)
+	{
+		dir = DR;
+	}
+	else if (angleInDegrees >= 67.5 && angleInDegrees < 112.5)
+	{
+		dir = R;
+	}
+	else if (angleInDegrees >= 112.5 && angleInDegrees < 157.5)
+	{
+		dir = UR;
+	}
+	else if (angleInDegrees >= 157.5 && angleInDegrees < 202.5)
+	{
+		dir = U;
+	}
+	else if (angleInDegrees >= 202.5 && angleInDegrees < 247.5)
+	{
+		dir = UL;
+	}
+	else if (angleInDegrees >= 247.5 && angleInDegrees < 292.5)
+	{
+		dir = L;
+	}
+	else if (angleInDegrees >= 292.5 && angleInDegrees < 237.5)
+	{
+		dir = DL;
+	}
+	else
+	{
+		dir = D;
+	}
+	return dir;
+
+}
