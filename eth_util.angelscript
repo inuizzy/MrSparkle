@@ -390,11 +390,9 @@ uint find8way(const vector2 v)
 
 }
 
-vector2 bulletDir(ETHEntity@ thisEntity)
+vector2 bulletDir(uint dirIN)
 {
-	uint dirIN;
 	vector2 dirOUT;
-	dirIN = lastKeyDir2;
 	//thisEntity.GetUInt("moveDir");
 	if (dirIN == 0)
 	{

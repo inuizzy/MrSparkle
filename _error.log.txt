@@ -1,7 +1,6 @@
-[G:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
-Function: void ETHCallback_spark(ETHEntity@)
-Section: G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript
-Line: 308
-Description: Null pointer access
+[C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
 
-ERROR - Exception: Null pointer access
+AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 102): 
+Expected ',' or ';'
+ERROR - Failed while building module.
+ERROR - ETHEngine::StartEngine: the script has set no scene to load.

@@ -1,10 +1,4 @@
-[G:\Users\Falcon\Documents\Ethanon\MrSparkle\_warning.log.txt]
+[C:\Users\Falcon\Documents\Ethanon\MrSparkle\_warning.log.txt]
 
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 76): 
-Signed/Unsigned mismatch
-
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 323): 
-Signed/Unsigned mismatch
-
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 325): 
+AngelScript WARNING (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 78): 
 Signed/Unsigned mismatch

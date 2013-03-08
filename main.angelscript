@@ -9,6 +9,8 @@ string VelStr;
 vector2 VelVec;
 float HP;
 uint lastKeyDir2;
+vector2 bulletMoveDir;
+
 
 #include "eth_util.angelscript"
 #include "Collide.angelscript"
@@ -95,8 +97,19 @@ void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 
 void ETHCallback_bullet(ETHEntity@ thisEntity)
 {
+
+	vector2 dire = bulletMoveDir;
+    float speed = UnitsPerSecond(500.0f);
+	thisEntity.AddToPositionXY(dire * speed);
+
+
+
+
+
+
+
 	//ETHPhysicsController @body = thisEntity.GetPhysicsController();
-	float speed = UnitsPerSecond(100.0f);
+	/*float speed = UnitsPerSecond(100.0f);
 	ETHPhysicsController @body = thisEntity.GetPhysicsController();
 
 	//thisEntity.AddToPositionXY(normalize(bulletDir(thisEntity)) * speed);
@@ -104,7 +117,7 @@ void ETHCallback_bullet(ETHEntity@ thisEntity)
 	if (thisEntity.GetFloat("dead") == 1)
 		{
 			DeleteEntity(thisEntity);
-		}
+		}*/
 
 }
 
@@ -112,7 +125,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 {
 	ETHInput @input = GetInputHandle();
 	ETHPhysicsController @body = thisEntity.GetPhysicsController();
-	ETHEntity@ bullet = SeekEntity("bullet.ent");
+	//ETHEntity@ bullet = SeekEntity("bullet.ent");
 
 	SetCameraPos(thisEntity.GetPositionXY() - (GetScreenSize() / 2.0f));
 	const float textSize = 25.0f;
@@ -125,6 +138,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	float sparkY;
 	string strDirX;
 	string strDirY;
+
 
 	
 	thisEntity.SetFloat("maxJumps",2);
@@ -304,8 +318,22 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 		}
 	if (input.GetKeyState(K_F) == KS_HIT)
 		{
-			AddEntity("bullet.ent", vector3(thisEntity.GetPosition() + vector3(50,0,0)));
-			bullet.SetUInt("moveDir",thisEntity.GetUInt("lastKeyDir"));
+			
+				ETHEntity @bullet = null;
+				AddEntity("bullet.ent", thisEntity.GetPosition() + vector3(50, 0, 0), bullet);
+				
+				if (bullet !is null)
+				{
+
+					// the bullet direction will be the same as our character's last direction
+					bulletMoveDir = bulletDir(lastKeyDir2);//extra//thisEntity.GetVector2("lastKeyDir")
+					//bullet.SetFloat("speed", 250.0f);
+				}
+			
+
+
+			//AddEntity("bullet.ent", vector3(thisEntity.GetPosition() + vector3(50,0,0)));
+			//bullet.SetUInt("moveDir",thisEntity.GetUInt("lastKeyDir"));
 			//bullet.AddToPositionXY(normalize(vector2(1,0)) * speed);
 			//ETHEntity @bullet = SeekEntity("bullet.ent");
 			//ETHPhysicsController @bullbody = bullet.GetPhysicsController();
@@ -314,7 +342,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	if (input.GetKeyState(K_G) == KS_DOWN)
 		{
 			print(find8way(KeyboardInput()));
-			bullet.SetUInt("moveDir",(bullet.GetUInt("moveDir")+1));
+			//bullet.SetUInt("moveDir",(bullet.GetUInt("moveDir")+1));
 		}
 	if (input.GetKeyState(K_Q) == KS_HIT)
 		{
@@ -340,7 +368,10 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			GetEntitiesAroundBucket(bombBucket, entities);
 
 			for (uint t = 0; t < entities.Size(); t++)
-			    print(entities[t].GetEntityName() + " is around the Spark!");
+			    print(entities[t].GetEntityName() + " is around the Spark!   " + entities[t].GetID());
+			    ////////////////////////////////////////////////////////////////^^^^^^^^^^^^^^^^^^^^^ this shows their ID
+			
+				
 	
 		}
 

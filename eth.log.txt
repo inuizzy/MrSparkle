@@ -1,67 +1,3214 @@
-[G:\Users\Falcon\Documents\Ethanon\MrSparkle\eth.log.txt]
+[C:\Users\Falcon\Documents\Ethanon\MrSparkle\eth.log.txt]
 Backbuffer created as 854, 480
 Loading game script from source-code: main.angelscript
 
-AngelScript INFO (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 55): 
+AngelScript INFO (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 57): 
 Compiling void ETHCallback_flyEnm(ETHEntity@)
 
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 76): 
+AngelScript WARNING (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 78): 
 Signed/Unsigned mismatch
-
-AngelScript INFO (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 111): 
-Compiling void ETHCallback_spark(ETHEntity@)
-
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 323): 
-Signed/Unsigned mismatch
-
-AngelScript WARNING (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 325): 
-Signed/Unsigned mismatch
-Compile time: 78 milliseconds
+Compile time: 31 milliseconds
 (Loaded) block.png
 (Loaded) front.png
 (Loaded) testSize.png
 (Loaded) fly_normal.png
 (Loaded) slime_walk.png
 Mr Sparkle hit block!
-(Loaded) particle.png
-Function: void ETHCallback_spark(ETHEntity@)
-Section: G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript
-Line: 308
-Description: Null pointer access
-
-ERROR - Exception: Null pointer access
 1 1
 1 1
 Mr Sparkle hit block!
 1 1
 1 1
-1 2
-1 3
-1 4
-1 5
-2 1
-2 2
-2 3
-2 4
-2 5
-3 1
-3 2
+1 1
+1 1
+1 1
+1 1
+(Loaded) particle.png
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
 3 3
-3 4
-3 5
-4 1
-4 2
-4 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+hit
+ENDhit
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Monster Damage
+Start Damage Timer
+1 1
+2 2
+2 2
+CAN'T TOUCH THIS
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+hit
+2 2
+hit
+2 2
+2 2
+2 2
+ENDhit
+ENDhit
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+CAN'T TOUCH THIS
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+3 3
+3 3
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Reset Damage Timer
+7 7
+7 7
+7 7
+7 7
+Our character is no longer stepping on the ground!
+7 7
+7 7
+7 7
+7 7
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
 4 4
-4 5
-5 1
-5 2
-5 3
-5 4
+4 4
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+4 4
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+4 4
+4 4
+4 4
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+4 4
+4 4
+4 4
+4 4
+Monster Damage
+Start Damage Timer
+4 4
+4 4
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+4 4
+4 4
+4 4
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Our character is no longer stepping on the ground!
+4 4
+4 4
+Mr Sparkle hit block!
+4 4
+4 4
+4 4
+4 4
+2 2
+2 2
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+CAN'T TOUCH THIS
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+Mr Sparkle hit block!
+Reset Damage Timer
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+Mr Sparkle hit block!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+7 7
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+3 3
+4 4
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+7 7
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+6 6
+6 6
+Our character is no longer stepping on the ground!
+6 6
+6 6
+Mr Sparkle hit block!
+6 6
+6 6
+6 6
+6 6
+6 6
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+2 2
+2 2
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Monster Damage
+Start Damage Timer
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+hit
+2 2
+hit
+ENDhit
+2 2
+ENDhit
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+0 0
+Our character is no longer stepping on the ground!
+0 0
+CAN'T TOUCH THIS
+0 0
+Mr Sparkle hit block!
+0 0
+0 0
+0 0
+0 0
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+6 6
+6 6
+6 6
+Our character is no longer stepping on the ground!
+6 6
+6 6
+Mr Sparkle hit block!
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+Our character is no longer stepping on the ground!
+6 6
+6 6
+6 6
+Mr Sparkle hit block!
+6 6
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+Reset Damage Timer
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+Mr Sparkle hit block!
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+Our character is no longer stepping on the ground!
+6 6
+6 6
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+4 4
+Our character is no longer stepping on the ground!
+4 4
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+2 2
+2 2
+2 2
+Our character is no longer stepping on the ground!
+2 2
+2 2
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Monster Damage
+Start Damage Timer
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+4 4
+4 4
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+5 5
+5 5
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+4 4
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+4 4
+4 4
+4 4
+4 4
+Reset Damage Timer
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+4 4
+4 4
+4 4
+4 4
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+Our character is no longer stepping on the ground!
+2 2
+2 2
+1 1
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+Mr Sparkle hit block!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+hit
+1 1
+Our character is no longer stepping on the ground!
+1 1
+ENDhit
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+hit
+ENDhit
+hit
+hit
+ENDhit
+ENDhit
+hit
+ENDhit
+Mr Sparkle hit block!
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+4 4
+4 4
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+3 3
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+3 3
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+hit
+ENDhit
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+hit
+ENDhit
+hit
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+ENDhit
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+hit
+4 4
+4 4
+4 4
+4 4
+4 4
+ENDhit
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+hit
+1 1
+1 1
+ENDhit
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+Our character is no longer stepping on the ground!
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+4 4
+4 4
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+hit
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+ENDhit
+1 1
+hit
+1 1
+1 1
+ENDhit
+1 1
+1 1
+1 1
+1 1
+hit
+ENDhit
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+6 6
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
 5 5
 hit
+ENDhit
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+7 7
+7 7
+7 7
+7 7
+7 7
+0 0
+0 0
+0 0
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+5 5
+5 5
+5 5
+5 5
+5 5
+6 6
+6 6
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+6 6
+6 6
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Our character is no longer stepping on the ground!
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+3 3
+3 3
+3 3
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+0 0
+0 0
+0 0
+7 7
+7 7
+6 6
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+Mr Sparkle hit block!
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+Mr Sparkle hit block!
+6 6
+6 6
+6 6
+6 6
+6 6
+7 7
+7 7
+7 7
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+6 6
+6 6
+7 7
+7 7
+7 7
+7 7
+7 7
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+6 6
+6 6
+6 6
+6 6
 hit
+5 5
+hit
+5 5
+5 5
+ENDhit
+ENDhit
+6 6
+hit
+6 6
+ENDhit
+7 7
+Mr Sparkle hit block!
+7 7
+7 7
+7 7
+6 6
+Our character is no longer stepping on the ground!
+6 6
+hit
+6 6
+5 5
+5 5
+5 5
+ENDhit
+5 5
+3 3
+3 3
+3 3
+3 3
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+3 3
+2 2
+2 2
+hit
+1 1
+1 1
+1 1
+1 1
+ENDhit
+1 1
+1 1
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+hit
+5 5
+5 5
+5 5
+ENDhit
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+1 1
+1 1
+1 1
+2 2
+hit
+2 2
+2 2
+ENDhit
+2 2
+2 2
+2 2
+2 2
+2 2
+5 5
+5 5
+5 5
+5 5
+4 4
+4 4
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
 hit
 ENDhit
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+4 4
+3 3
+3 3
+3 3
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+0 0
+0 0
+0 0
+0 0
+0 0
+1 1
+1 1
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+6 6
+5 5
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+Our character is no longer stepping on the ground!
+5 5
+6 6
+Mr Sparkle hit block!
+7 7
+7 7
+7 7
+7 7
+6 6
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+Mr Sparkle hit block!
+5 5
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+hit
+2 2
+2 2
 ENDhit
+2 2
+2 2
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+6 6
+6 6
+7 7
+7 7
+7 7
+7 7
+7 7
+5 5
+5 5
+5 5
+5 5
+7 7
+0 0
+0 0
+0 0
+0 0
+1 1
+hit
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+Our character is no longer stepping on the ground!
 ENDhit
+1 1
+2 2
+2 2
+2 2
+3 3
+4 4
+5 5
+5 5
+5 5
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+4 4
+2 2
+2 2
+2 2
+3 3
+5 5
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+0 0
+0 0
+0 0
+6 6
+6 6
+6 6
+6 6
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+5 5
+5 5
+5 5
+0 0
+0 0
+0 0
+0 0
+7 7
+7 7
+Mr Sparkle hit block!
+7 7
+1 1
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+Mr Sparkle hit block!
+2 2
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+3 3
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+5 5
+1 1
+1 1
+1 1
+1 1
+0 0
+0 0
+7 7
+6 6
+6 6
+6 6
+6 6
+7 7
+7 7
+7 7
+6 6
+6 6
+6 6
+6 6
+5 5
+5 5
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+7 7
+6 6
+Our character is no longer stepping on the ground!
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+2 2
+Mr Sparkle hit block!
+2 2
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+2 2
+5 5
+5 5
+5 5
+3 3
+2 2
+2 2
+2 2
+4 4
+5 5
+5 5
+5 5
+4 4
+2 2
+2 2
+2 2
+2 2
+4 4
+5 5
+5 5
+5 5
+5 5
+2 2
+2 2
+2 2
+2 2
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+4 4
+4 4
+Mr Sparkle hit block!
+4 4
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+3 3
+3 3
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+1 1
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+4 4
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+5 5
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+Mr Sparkle hit block!
+5 5
+3 3
+3 3
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+2 2
+2 2
+2 2
+2 2
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+2 2
+Mr Sparkle hit block!
+2 2
+2 2
+Mr Sparkle hit block!
+2 2
+2 2
+2 2
+2 2
+4 4
+5 5
+5 5
+5 5
+Our character is no longer stepping on the ground!
+5 5
+5 5
+5 5
+5 5
+1 1
+2 2
+2 2
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+3 3
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+2 2
+2 2
+2 2
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+6 6
+6 6
+7 7
+7 7
+7 7
+0 0
+0 0
+0 0
+0 0
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+2 2
+2 2
+Our character is no longer stepping on the ground!
+5 5
+Mr Sparkle hit block!
+5 5
+5 5
+5 5
+5 5
+4 4
+4 4
+Our character is no longer stepping on the ground!
+Our character is no longer stepping on the ground!
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+4 4
+4 4
+4 4
+7 7
+7 7
+7 7
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+6 6
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+7 7
+7 7
+7 7
+7 7
+7 7
+7 7
+0 0
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+3 3
+4 4
+Our character is no longer stepping on the ground!
+4 4
+4 4
+4 4
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+2 2
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+1 1
+Mr Sparkle hit block!
+Mr Sparkle hit block!
+1 1
+1 1
+1 1
+Our character is no longer stepping on the ground!
+1 1
+3 3
+3 3
+Our character is no longer stepping on the ground!
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+4 4
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+5 5
+3 3
+3 3
+3 3
+1 1
+1 1
+1 1
+1 1
+5 5
+6 6
+6 6
+6 6
+6 6
+7 7
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+5 5
+5 5
+5 5
+5 5
+6 6
+6 6
+7 7
+7 7
+7 7
+7 7
+6 6
+6 6
+6 6
+5 5
+5 5
+1 1
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+Mr Sparkle hit block!
+2 2
+2 2
+Our character is no longer stepping on the ground!
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+1 1
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+2 2
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
+3 3
