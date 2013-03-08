@@ -8,6 +8,7 @@ Timer d_timer;
 string VelStr;
 vector2 VelVec;
 float HP;
+uint lastKeyDir2;
 
 #include "eth_util.angelscript"
 #include "Collide.angelscript"
@@ -45,6 +46,7 @@ void onUpdate()
 	//thisEntity.SetFloat("HP",HP);
 	VelVec = body.GetLinearVelocity();
 	VelStr = vector2ToString(VelVec);
+	
 
 	DrawFadingText(vector2(100,0),"Test: " + vector2ToString(getCurrentForce(thisEntity)) + "\n " + vector2ToString(currentPos) + "\n" + touchingGround + "\n" + GetTime() + "\n" + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
@@ -71,7 +73,7 @@ void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 			//print("minus" + getTimeString(s_timer.getElapsedTime()));
 			
 		}
-	if (s_timer.getElapsedTime() > 5000)
+	if (s_timer.getElapsedTime() > (5000 + rand(500)))
 		{
 
 			s_timer.reset();
@@ -89,12 +91,16 @@ void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 
 }
 
+
+
 void ETHCallback_bullet(ETHEntity@ thisEntity)
 {
 	//ETHPhysicsController @body = thisEntity.GetPhysicsController();
-	float speed = UnitsPerSecond(500.0f);
+	float speed = UnitsPerSecond(100.0f);
+	ETHPhysicsController @body = thisEntity.GetPhysicsController();
 
-	thisEntity.AddToPositionXY(normalize(vector2(1,0)) * speed);
+	//thisEntity.AddToPositionXY(normalize(bulletDir(thisEntity)) * speed);
+	body.SetLinearVelocity(normalize(bulletDir(thisEntity)) * speed);
 	if (thisEntity.GetFloat("dead") == 1)
 		{
 			DeleteEntity(thisEntity);
@@ -268,7 +274,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 
 		}
 
-	if (input.GetKeyState(K_UP) == KS_UP)
+	if (input.GetKeyState(K_UP) == KS_RELEASE)
 		{
 			//DrawFadingText(vector2(100,200),"up","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 			thisEntity.SetFloat("forceY", 0);
@@ -289,13 +295,53 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			DrawFadingText(vector2(100,200),VelStr + " " + thisEntity.GetFloat("jumps") + " " + thisEntity.GetFloat("HP"),"Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
 
 		}
+	if (KeyboardInput() != vector2(0,0))
+		{
+			thisEntity.SetUInt("lastKeyDir",find8way(KeyboardInput()));
+			lastKeyDir2 = find8way(KeyboardInput());
+			//bullet.SetUInt("moveDir",thisEntity.GetUInt("lastKeyDir"));
+			print(thisEntity.GetUInt("lastKeyDir") + " " + lastKeyDir2);
+		}
 	if (input.GetKeyState(K_F) == KS_HIT)
 		{
 			AddEntity("bullet.ent", vector3(thisEntity.GetPosition() + vector3(50,0,0)));
+			bullet.SetUInt("moveDir",thisEntity.GetUInt("lastKeyDir"));
 			//bullet.AddToPositionXY(normalize(vector2(1,0)) * speed);
 			//ETHEntity @bullet = SeekEntity("bullet.ent");
 			//ETHPhysicsController @bullbody = bullet.GetPhysicsController();
 			//bullbody.SetLinearVelocity(normalize(vector2(1.0f, 0.0f)));
+		}
+	if (input.GetKeyState(K_G) == KS_DOWN)
+		{
+			print(find8way(KeyboardInput()));
+			bullet.SetUInt("moveDir",(bullet.GetUInt("moveDir")+1));
+		}
+	if (input.GetKeyState(K_Q) == KS_HIT)
+		{
+			/*int xTime;
+			xTime = 5;
+			for (uint t=1; t<=xTime; t++)
+			{
+				for (uint t2=1; t2<=xTime; t2++)
+				{
+				AddEntity("bullet.ent", vector3(thisEntity.GetPosition() + vector3((50+t2),-(t*10),0)));
+				//bullet.SetUInt("moveDir",thisEntity.GetUInt("lastKeyDir"));
+				print(t + " " + t2);
+				}
+
+				//print(t + " " + t2);
+			}*/
+			vector2 bombPos(currentPos);
+			vector2 bombBucket = GetBucket(bombPos);
+
+			ETHEntityArray entities;
+
+			// Copies into 'entities' a handle to each entity contained in the buckets around 'bombBucket'
+			GetEntitiesAroundBucket(bombBucket, entities);
+
+			for (uint t = 0; t < entities.Size(); t++)
+			    print(entities[t].GetEntityName() + " is around the Spark!");
+	
 		}
 
 	//if (thisEntity.CheckCustomData("elapsedTime") == DT_NODATA)
@@ -500,3 +546,9 @@ void addHP(ETHEntity @thisEntity, const int value)
 	thisEntity.SetFloat("HP",toAdd);
 
 }
+/*//TEST\\\
+for (uint t=0; t<number; t++)
+{
+
+}
+*///end TEST\\\\

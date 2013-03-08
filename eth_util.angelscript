@@ -378,7 +378,7 @@ uint find8way(const vector2 v)
 	{
 		dir = L;
 	}
-	else if (angleInDegrees >= 292.5 && angleInDegrees < 237.5)
+	else if (angleInDegrees >= 292.5 && angleInDegrees < 337.5)
 	{
 		dir = DL;
 	}
@@ -388,4 +388,46 @@ uint find8way(const vector2 v)
 	}
 	return dir;
 
+}
+
+vector2 bulletDir(ETHEntity@ thisEntity)
+{
+	uint dirIN;
+	vector2 dirOUT;
+	dirIN = lastKeyDir2;
+	//thisEntity.GetUInt("moveDir");
+	if (dirIN == 0)
+	{
+		dirOUT = vector2(1,1);
+	}
+	else if (dirIN == 1)
+	{
+		dirOUT = vector2(1,0);
+	}
+	else if (dirIN == 2)
+	{
+		dirOUT = vector2(1,-1);
+	}
+	else if (dirIN == 3)
+	{
+		dirOUT = vector2(0,-1);
+	}
+	else if (dirIN == 4)
+	{
+		dirOUT = vector2(-1,-1);
+	}
+	else if (dirIN == 5)
+	{
+		dirOUT = vector2(-1,0);
+	}
+	else if (dirIN == 6)
+	{
+		dirOUT = vector2(-1,1);
+	}
+	else
+	{
+		dirOUT = vector2(0,1);
+	}
+
+	return dirOUT;
 }

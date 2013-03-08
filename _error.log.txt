@@ -1,6 +1,7 @@
-[C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
+[G:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
+Function: void ETHCallback_spark(ETHEntity@)
+Section: G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript
+Line: 308
+Description: Null pointer access
 
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 85): 
-No matching signatures to 'addHP(ETHEntity@&)'
-ERROR - Failed while building module.
-ERROR - ETHEngine::StartEngine: the script has set no scene to load.
+ERROR - Exception: Null pointer access
