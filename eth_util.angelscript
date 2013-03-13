@@ -276,6 +276,7 @@ class Timer
 
 	void reset()
 	{
+		//duplicate for organizing
 		startTime = GetTime();
 	}
 
