@@ -1,6 +1,6 @@
-[C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
+[G:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
 
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 102): 
-Expected ',' or ';'
+AngelScript ERROR (G:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 322): 
+No matching operator that takes the types 'string' and 'vector2&' found
 ERROR - Failed while building module.
 ERROR - ETHEngine::StartEngine: the script has set no scene to load.

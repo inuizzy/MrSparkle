@@ -8,7 +8,7 @@ Timer d_timer;
 string VelStr;
 vector2 VelVec;
 float HP;
-uint lastKeyDir2;
+vector2 lastKeyDir2;
 vector2 bulletMoveDir;
 
 
@@ -98,9 +98,14 @@ void ETHCallback_flyEnm(ETHEntity@ thisEntity)
 void ETHCallback_bullet(ETHEntity@ thisEntity)
 {
 
-	vector2 dire = bulletMoveDir;
-    float speed = UnitsPerSecond(500.0f);
+	vector2 dire = thisEntity.GetVector2("direction");
+    float speed = UnitsPerSecond(thisEntity.GetFloat("speed"));
 	thisEntity.AddToPositionXY(dire * speed);
+	/*
+	vector2 dir = fireball.GetVector2("direction");
+	const float speed = UnitsPerSecond(fireball.GetFloat("speed"));
+	fireball.AddToPositionXY(dir * speed);
+	*/
 
 
 
@@ -312,9 +317,9 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 	if (KeyboardInput() != vector2(0,0))
 		{
 			thisEntity.SetUInt("lastKeyDir",find8way(KeyboardInput()));
-			lastKeyDir2 = find8way(KeyboardInput());
+			lastKeyDir2 = normalize(KeyboardInput());
 			//bullet.SetUInt("moveDir",thisEntity.GetUInt("lastKeyDir"));
-			print(thisEntity.GetUInt("lastKeyDir") + " " + lastKeyDir2);
+			print(thisEntity.GetUInt("lastKeyDir") + " " + vector2ToString(lastKeyDir2));
 		}
 	if (input.GetKeyState(K_F) == KS_HIT)
 		{
@@ -325,8 +330,11 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 				if (bullet !is null)
 				{
 
+					bullet.SetVector2("direction", lastKeyDir2);
+					bullet.SetFloat("speed", 500.0f);
+
 					// the bullet direction will be the same as our character's last direction
-					bulletMoveDir = bulletDir(lastKeyDir2);//extra//thisEntity.GetVector2("lastKeyDir")
+					//bulletMoveDir = bulletDir(lastKeyDir2);//extra//thisEntity.GetVector2("lastKeyDir")
 					//bullet.SetFloat("speed", 250.0f);
 				}
 			
