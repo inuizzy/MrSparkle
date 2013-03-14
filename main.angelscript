@@ -102,7 +102,8 @@ void ETHCallback_bullet(ETHEntity@ thisEntity)
 	ETHPhysicsController @bullPhys = thisEntity.GetPhysicsController();
 	vector2 dire = thisEntity.GetVector2("direction");
     float speed = UnitsPerSecond(thisEntity.GetFloat("speed"));
-	thisEntity.AddToPositionXY(dire * speed);
+	//thisEntity.AddToPositionXY(dire * speed);
+	bullPhys.SetLinearVelocity(dire * speed);
 	//bullPhys.ApplyAngularImpulse(vector2(1,0));
 
 	/*
@@ -283,10 +284,18 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 					if (g_timer.getElapsedTime() < 250)
 					{
 
+						if (dashTime.isRunning() > 0)
+						{
+							body.SetLinearVelocity(normalize(vector2(1.0f,-1.0f ) * dash));
+						}
+						else //(dashTime.isRunning < 1)
+						{
 						//Velocity
 						//body.ApplyLinearImpulse(normalize(vector2(0.0f, sparkY)), vector2(thisEntity.GetPosition().x, thisEntity.GetPosition().y));
 						body.SetLinearVelocity(normalize(vector2(0.0f, sparkY)));
 						thisEntity.SetFloat("forceY", -1);
+						}
+
 					}
 
 					else 
@@ -393,7 +402,13 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 
 		if (input.GetKeyState(K_Z) == KS_HIT)
 		{
-			dashTime.start();
+			
+			//if (thisEntity.GetFloat("dash") < thisEntity.GetFloat("maxDash"))
+			//	{
+					dashTime.start();
+					DrawFadingText(vector2(100,250),"start dash timer","Verdana30_shadow.fnt",ARGB(120,25,46,255), 100);
+					thisEntity.SetFloat("dash", (thisEntity.GetFloat("dash") + 1));
+			//	}
 			
 		}
 
@@ -414,7 +429,7 @@ void ETHCallback_spark(ETHEntity@ thisEntity)
 			if (dashTime.getElapsedTime() > 100)
 			{
 				//speed = UnitsPerSecond(500);
-				body.SetLinearVelocity(vector2(0.0f,0.0f));
+				body.SetLinearVelocity(vector2(sparkX,0.0f));
 				dashTime.stop();
 
 

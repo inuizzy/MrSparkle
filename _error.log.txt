@@ -1,9 +1,6 @@
 [C:\Users\Falcon\Documents\Ethanon\MrSparkle\_error.log.txt]
 
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 404): 
-Expected ')' or ','
-
-AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 409): 
-Expected ')' or ','
+AngelScript ERROR (C:\Users\Falcon\Documents\Ethanon\MrSparkle\main.angelscript line 291): 
+Expected expression value
 ERROR - Failed while building module.
 ERROR - ETHEngine::StartEngine: the script has set no scene to load.
